@@ -1,0 +1,86 @@
+form .zf-sheet .steps {
+    margin: 0;
+    padding: 0;
+    display: inline;
+} 
+.steps a {
+    list-style-type: none;
+    border-radius: 50%;
+    border: 1px solid #c8c8c8;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 10pt;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 19px;
+    color: #ea7804;
+    text-decoration: none;
+    margin-left: 12px;
+}
+.steps a:hover, .steps a.selected {
+    background-color: #ea7804;
+    color: white;
+    border-color: #ea7804;
+}
+form .zf-sheet {
+    border-left: solid 20px #FAFAFA !important;
+    display: none;
+}
+form .zf-sheet .header,
+form .zf-sheet .footer {
+    /*width: 160px; */
+    font-size:25px; 
+    color: #D1D1D1; 
+    padding: 10px 0; 
+    margin-left: 308px;
+}
+form .zf-sheet .footer {
+    padding: 0 0 10px 15px; 
+    margin-left: 54px;
+}
+form .zf-sheet textarea {
+    height: 64px !important;
+}
+form input:disabled {
+    background-color: rgb(247, 247, 247);
+    border: 1px dashed rgb(172, 184, 203);
+}
+.zagolovok {
+    margin: 0px 0px 17px -20px !important;
+}
+fieldset > div {
+    margin-right: 15px;
+}
+.error {
+    border-color: #f5002e !important;
+}
+label.error {
+    position: absolute;
+    z-index: 9999;
+    width: 240px;
+    top: 0px;
+    left: 250px;
+    margin-left: 5px;
+    border: 2px solid #f5002e;
+    color: #f5002e;
+    padding: 5px !important;
+    background: white;
+    box-shadow: #bbb 0.3em 0.3em 0.3em;
+    border-radius: 2px;
+    font-size: 10pt;
+} 
+.zf-checkboxgroup label.error,
+.other label.error {
+    left: 495px;
+}
+
+label.error::after {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 2px;
+    width: 11px;
+    height: 19px;
+    background: url(img/error-arrow.png) 0px 0px no-repeat;
+} 
