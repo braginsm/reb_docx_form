@@ -1441,12 +1441,12 @@ and open the template in the editor.
             ),
             array(
                 'TYPE' => 'text',
-                'ID' => '31INN',
-                'PLACEHOLDER' => 'ИНН',
-                'TITLE' => 'ИНН контрагента',
+                'ID' => '31MNK',
+                'PLACEHOLDER' => 'страна, город',
+                'TITLE' => 'Место нахождения контрагента',
                 'VALIDATE' => [
-                    'RULES' => '{required: true, pattern:"^([0-9]{10}|[0-9]{12})$"}',
-                    'MESSAGES' => '{required: "Это поле обязательно для заполнения",pattern: "Укажите ИНН"}'
+                    'RULES' => '{required: true}',
+                    'MESSAGES' => '{required: "Это поле обязательно для заполнения"}'
                 ],
                 //'MASK' => '999999999999',
             ),

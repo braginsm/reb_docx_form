@@ -165,6 +165,12 @@ class CreateDocxFromTemplate {
 
 $arFields = $_REQUEST;
 $arFields['FIO'] = $arFields['FIRST_NAME'].' '.$arFields['NAME'].' '.$arFields['SECOND_NAME'];
+$arFields['28DIMR'] = $arFields['28DR'].', '.$arFields['28MR'];
+
+for($i = 0; $i < 3; $i++) {
+    $arFields['30RK-'.$i] = $arFields['30NK-'.$i] ? $arFields['30RK-'.$i] : '';
+    $arFields['31RK-'.$i] = $arFields['31NK-'.$i] ? $arFields['31RK-'.$i] : '';
+}
 foreach($arFields as $key => $val) {
     if(substr_count($val, $key)) {
         $arFields[$val] = 'Y';
